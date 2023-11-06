@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESALINK</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="footerr.css" rel="stylesheet">
+    <link href="beforef.css" rel="stylesheet">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    
+</head>
+
+<body id="body" onscroll="handleScroll()">
+    <div class="body11" >
+      
+      <div class="firstSec">
+        <div id='firstSectionContainer' class="firstSectionContainer">
+          <div class="navBarConntainer">
+            <div class="logo">
+              <img src="./images/logo.svg" class="logoImage" alt="">
+            </div>
+            <div class="middleOptions">
+              <div class="borderButton">
+                <a class="factLinkContainer" href="/expertise/facturation-electronique/">
+                  Facturation électronique
+                  2024
+                </a>
+              </div>
+              <div class="addOption" onmouseover="showDropdown()" >
+                <span class="navBarOpt">Expertise</span>
+                <span onmouseleave="hideDropdown()" onmouseover="showDropdown()" id="dropdown1" class="hover-target submenu absolute group-hover:transition duration-300 shadow-xl">
+                  <div class="bg-white text-gray-700 w-auto rounded-lg mt-[15px] p-12">
+                    <div class="flex gap-5">
+                      <div class="w-[270px] border-r pr-4"><label
+                          class="text-xl font-semibold font-heading ">NOTRE<br>EXPERTISE</label>
+                        <p class="text-base text-gray-600 font-heading mt-2">Optimisez vos échanges de données B2B au profit
+                          de votre productivité en adéquation avec vos exigences sectorielles</p>
+                      </div>
+                      <div class="text-base font-heading pl-4 flex flex-col justify-center">
+                        <ul class="leading-8 text-esalink-orange">
+                          <li class="font-semibold hover:opacity-90"><a href="https://tarun-nine.vercel.app/">EDI - L'échange de Données
+                              Informatisé</a></li>
+                          <li class="font-semibold hover:opacity-90 mt-2"><a href="/expertise/facturation-electronique/">La
+                              facturation électronique</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </div>
+              <div class="addOption" onmouseover="showDropdown2()" onmouseleave="hideDropdown2()">
+                <span   class="navBarOpt">Solutions</span>
+                <span onmouseleave="hideDropdown2()" id="dropdown2" class="hover-target submenu absolute group-hover:transition duration-300 shadow-xl">
+                  <div class="bg-white text-gray-700 w-auto rounded-lg mt-[15px] p-12">
+                    <div class="flex gap-5">
+                      <div class="w-[270px] border-r pr-4"><label
+                          class="text-xl font-semibold font-heading ">NOS<br>SOLUTIONS</label>
+                        <p class="text-base text-gray-600 font-heading mt-2">Catalysez la collaboration au sein de votre
+                          écosystème à travers une large gamme de solutions de dématérialisation adaptées à vos besoins</p>
+                      </div>
+                      <div class="text-base font-heading pl-4 ">
+                        <div class="border-b mb-3 pb-2"><a class="font-semibold hover:text-esalink-orange"
+                            href="/solutions/">Nos solutions</a></div>
+                        <div class="flex gap-10 justify-center ">
+                          <ul class="leading-8">
+                            <li class="font-semibold">On premise</li>
+                            <li class="text-esalink-orange hover:opacity-90"><a
+                                href="/solutions/tradexpress/">TradeXpress</a>
+                            </li>
+                            <li class="text-esalink-orange hover:opacity-90"><a href="/solutions/ibm-sterling/">IBM
+                                Sterling</a></li>
+                            <li class="text-esalink-orange hover:opacity-90"><a href="/solutions/cleo/">Cleo</a></li>
+                          </ul>
+                          <ul class="leading-8">
+                            <li class="font-semibold">Cloud</li>
+                            <li class="text-esalink-orange hover:opacity-90"><a href="/solutions/hubtimize/">Hubtimize®</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </div>
+              <div class="addOption" onmouseover="showDropdown3()" onmouseleave="hideDropdown3()">
+                <span  class="navBarOpt">Services</span>
+                <div onmouseleave="hideDropdown2()" id="dropdown3" class="hover-target submenu absolute group-hover:transition duration-300 shadow-xl">
+                  <div class="bg-white text-gray-700 w-auto rounded-lg mt-[15px] p-12">
+                    <div class="flex gap-5">
+                      <div class="w-[270px] border-r pr-4"><label
+                          class="text-xl font-semibold font-heading ">NOS<br>SERVICES</label>
+                        <p class="text-base text-gray-600 font-heading mt-2">Optimisez vos échanges de données B2B au profit
+                          de votre productivité en adéquation avec vos exigences sectorielles</p>
+                      </div>
+                      <div class="text-base font-heading pl-4 flex flex-col justify-center">
+                        <div class="border-b mb-3 pb-2"><a class="font-semibold hover:text-esalink-orange"
+                            href="/nos-services/">Nos services</a></div>
+                        <div class="flex gap-10 justify-center">
+                          <ul class="leading-8 text-esalink-orange">
+                            <li class="font-semibold hover:opacity-90 "><a href="/nos-services/tma/">TMA - Tierce
+                                maintenance
+                                applicative</a></li>
+                            <li class="font-semibold hover:opacity-90"><a href="/nos-services/regie/">Régie</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="addOption">
+                Blog
+              </div>
+            </div>
+            <div class="navButton">
+              Get Demo
+            </div>
+            <div class="fropt">
+              <select name="cars" id="cars">
+                <option value="volvo">FR</option>
+                <option value="saab">En</option>
+                <option value="mercedes">Tr</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="mainBodyContainer">
+    
+          <div class="imageContainer">
+            <h1 class="HeadingContainer">
+              TMA - Maintenance EDI
+            </h1>
+            <img
+              src="https:/www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fiso-27001.c9102e6a.webp&w=1080&q=75"
+              class="webIconImage">
+          </div>
+          <div class="descriptionTextContainer">
+            Tierce Maintenance Applicative
+            <br>
+            <br>
+            Esalink prestaire certifie sur plusieurs solutions d'integration B2B, vous accompage dans la
+            <br>
+            supervision et maintence de votre systeme EDI.
+          </div>
+          <div class="twoButttonContainer">
+            <div class="buttons">TSOUSCRIRE AU SERVICE TMA EDI</div>
+            <div class="buttons">ANALYSONS VOTRE PROJET SUR-MESURE</div>
+          </div>
+          <img src="https://www.esalink.com/_next/static/media/globe_white_block.6699e2aa.svg" class="globeIcon" alt="">
+          <div class="bottomImageIcons">
+            <img
+              src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fgenerix-white.e5ab8b0c.webp&w=256&q=75"
+              alt="" class="bottomIcons">
+            <img
+              src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fcleo-white.ad4618e5.webp&w=128&q=75"
+              alt="" class="bottomIcons">
+            <img
+              src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FHUBTIMIZE-white.19537ec6.webp&w=256&q=75"
+              alt="" class="bottomIcons">
+            <img
+              src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fibm-white.7d4e8780.webp&w=128&q=75"
+              alt="" class="bottomIcons">
+            <img
+              src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fgs1-white.c6b5f462.webp&w=128&q=75"
+              alt="" class="bottomIcons">
+            <img
+              src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Ffne-white.f8c056bc.webp&w=640&q=75"
+              alt="" class="bottomIcons">
+          </div>
+        </div>
+        <div class="overLapContainer">
+
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="secondSection">
+    <div>
+      <h1 class="headerInnovation">Confiez la <span style="color: rgb(240, 131, 14)">maintenance et supervision </span>de
+        votre systeme <span style="color: rgb(240, 131, 14)">eda</span>
+        <br>
+        à des experts 
+      </h1><br>
+      <div class="first">
+        <p class="innovationDescription">Votre plateforme EDI - EAI est un outil central dans le bon fonctionnement de votre
+        organisation. La
+        <br>
+        gestion efficace de votre écosystème EDI est déterminant pour la productivité de votre entreprise.
+        <br>
+        EsaLink prestataire officiel de plusieurs éditeurs, met à votre disposition une expertise avérée dans la
+        <br>
+        maintenance et supervision votre écosystème EDI..
+        <br>
+        <br>
+        Nos spécialistes certifiés sur les solutions TradeXpress® / TradeXpress® Infinity / IBM Sterling® B2B
+        <br>
+        Integrator et Cleo Integration Cloud se mobilisent pour vous assurer continuellement un fonctionnement
+        <br>
+        efficace de votre plateforme EDI / EAI.
+        <br>
+        <br>
+        On s’adapte à vos besoins pour permettre à vos équipes de se recentrer sur les activités à hautes valeurs
+        <br>
+        ajoutées axées sur le cœur de métier.
+      </p>
+      <img src="./images/maintenance.webp" alt="" class="imageicon">
+    </div>
+      <button class="button">INITIER UNE DEMANDE TMA</button>
+    </div>
+  </div>
+
+
+
+    <div class="secondSection">
+      <div class="secondHeader">
+        La <span class="yellowFont">satisfaction  </span>au cœur de notre<span class="yellowFont">service</span>
+      </div>
+      <div class="secondBodyContainer">
+        <img id="circleImg" src="./images/satisfaction.webp" alt="">
+            <div class="secondCircleDesc activeCircle" id="secDesc1">
+              <div class="secDescText" style="font-size: 18px; margin-left: 50px;">
+                <h1> &#x2022; Une équipe de consultants certifiés sur les technologies objet de la TMA</h1>
+                <h1>&#x2022; L'assurance d'une réactivité maximum</h1>
+                <h1>&#x2022; Des outils spécifiques de suivi et de gestion</h1>
+                <h1>&#x2022; Un guichet unique sur le projet</h1>
+                <h1>&#x2022; Un service transparent de haute qualité</h1>
+              </div>
+              <div class="secDescText" style="font-size: 18px; margin-left: 50px;" >
+                En externalisant la maintenance évolutive de leur plateforme à des experts métiers, les équipes 
+                informatiques de nos clients peuvent ainsi avancer sur des projets transverses centré sur le cœur de 
+                métier.
+              </div>
+            </div>
+            </div>
+          </div>
+      <!-- grid -->
+    <div class="container mx-auto px-4 snipcss-GQnBw kick">
+        <h2 class="mb-5 mx-auto font-heading font-semibold text-center text-6xl sm:text-7xl text-gray-900 aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
+          Retrouver nos autres <span style="color: rgb(240, 131, 14)">services</span>
+        </h2>
+        <div class="flex flex-wrap -m-5">
+          <div class="w-full md:w-1/3 p-5 aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
+            <div class="h-full p-0.5 bg-gradient-cyan transform hover:-translate-y-3 rounded-10 transition ease-out duration-1000">
+              <div class="h-full px-7 py-8 bg-white rounded-lg">
+                <div class="flex justify-between">
+                </div> 
+                <h3 class="mb-1.5 font-heading font-bold text-lg text-gray-900">
+                  Audit
+                </h3>
+                <p class="mb-8 text-lg text-gray-900 text-justify">
+                  Nos équipes diagnostiquent en profondeur votre configuration initiale ou votre système EDI actuel à travers un audit méthodique. À l’issue des processus, des livrables et rapports structurés accompagnés d’un plan d’action précis vous sont mis à disposition pour répondre au mieux à vos enjeux EDI.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:block w-full md:w-1/3 p-5 aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+            <div class="h-full p-0.5 bg-gradient-cyan transform hover:-translate-y-3 rounded-10 shadow-5xl transition ease-out duration-1000">
+              <div class="h-full px-7 py-8 bg-white rounded-lg">
+                <div class="flex justify-between">
+                </div>
+                <h3 class="mb-1.5 font-heading font-bold text-lg text-gray-900">
+                  Regie
+                </h3>
+                <p class="mb-8 text-lg text-gray-900 text-justify">
+                  Un ou plusieurs de nos experts EsaLink intègrent votre équipe afin de vous accompagner directement sur la gestion de vos problématiques EDI ou de dématérialisation fiscale.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:block w-full md:w-1/3 p-5 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1100">
+            <div class="h-full p-0.5 bg-gradient-cyan transform hover:-translate-y-3 rounded-10 transition ease-out duration-1000">
+              <div class="h-full px-7 py-8 bg-white rounded-lg">
+                <div class="flex justify-between">
+                </div>
+                <h3 class="mb-1.5 font-heading font-bold text-lg text-gray-900">
+                  Formations EDI
+                </h3>
+                <p class="mb-8 text-lg text-gray-900 text-justify">
+                  Fort de notre expérience sur une multitude de solutions connues, nous vous proposons plusieurs formations pédagogiques pour initier et spécialiser vos équipes - vos clients aux métiers et spécificités de l’EDI.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <div id="bl" class="footer">
+          <div class="footerColumn">
+            <br>
+            <img id="wwe" class="flogoImg" src="https://www.esalink.com/_next/static/media/esalink_logo_white.62726542.svg" alt="">
+            <p class="flogoContainer"><img class="flogo" src="./images/linkdelin.png">
+              contact@esalink.com</p>
+            <p>FRANCE</p>
+            <p>2 rue Jules Meline,51430 Bezannes</p>
+            <p>UK</p>
+            <p>235 Vauxhall Bridge Road, SW1V1EJ LONDON</p>
+            <p style="color:gray ;">© Copyright 2023. All Rights Reserved</p>
+            <img id="wwe1" class="flogoImg" src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fgreen-hosted.e662235b.webp&w=640&q=75" alt="">
+            <p style="color:gray ;">@ Rashi Shivhare</p>
+          </div>
+          <div class="footerColumn">
+            
+          </div>
+          <div class="footerColumn">
+            <p style="color:gray ;">ESALINK</p>
+            <a href="https://www.esalink.com/solutions/">Solutions</a><br><br>
+            <a href="https://account.microsoft.com/account/">Nos clients</a>
+            <a href="https://www.esalink.com/blog/">Blog</a>
+          </div>
+          <div class="footerColumn">
+            <p style="color:gray ;">ET PLUS ENCRE...</p>
+            <a href="https://account.microsoft.com/account/">Nous rejoindre</a><br><br>
+            <a href="https://account.microsoft.com/account/">Partenariats</a>
+          </div>
+          <div class="footerColumn">
+            <P style="color:gray ;">INFORMATIONS LEGALES</P>
+            <a href="https://www.esalink.com/legal-notices/">Mentions Legales</a><br><br>
+            <a href="https://www.esalink.com/privacy-policy/">Politiques de confidentialite</a>
+          </div>
+          <div class="footerColumn"></div>
+      </footer>
+
+    <script>
+    const handleScroll = () => {
+      const styleElementWhite = document.createElement('style');
+      const styleElementBlack = document.createElement('style');
+      const whiteBorderBottom = '.navButton {color: white;background-color:#ffffff56;}.factLinkContainer:hover {background-color: inherit;}.addOption {color: white;} .addOption:hover {border-bottom: 3px solid white;}';
+      const blackBorderBottom = '.navButton {color: black;background-color:#f1f5f9;}.factLinkContainer:hover {background-color: white;}.addOption {color: black;}.addOption:hover {border-bottom: 3px solid black;}';
+      styleElementWhite.textContent = whiteBorderBottom;
+      styleElementBlack.textContent = blackBorderBottom;
+      document.getElementsByClassName('logoImage')[0].src = `${window.scrollY <= 90 ? './images/logo.svg' : './images/scrollLogo.svg'}`
+      document.getElementById('firstSectionContainer').style.cssText = `${window.scrollY <= 90 ? 'background-color: transparent'
+        :
+        `z-index: 10;
+        color: black;
+        background-color: #ffffffe1;
+         `}`
+      document.getElementsByClassName('factLinkContainer')[0].style.cssText = `${window.scrollY <= 90 ? 'border-color: white; color: white;' : 'border-color: #80a4cb;color: #80a4cb;'}`
+      document.getElementById('body').appendChild(window.scrollY <= 90 ? styleElementWhite : styleElementBlack);
+
+    };
+    const a2Elements = document.querySelectorAll('.eles');
+    const cards = document.querySelectorAll('.carder');
+    const imagy = document.getElementById("img1");
+    cards.forEach((element) => {
+      element.addEventListener('click', function () {
+        const eles = element.querySelector(".eles");
+        console.log(eles.dataset.imagurl);
+        imagy.src = eles.dataset.imagurl;
+        imagy.classList.add('image-transition');
+        a2Elements.forEach((el) => {
+          el.classList.remove('a2');
+        });
+        eles.classList.add('a2');
+      });
+
+    });
+
+    const showCircleDiv = (id) => {
+
+document.querySelectorAll('.secondCircleDesc').forEach(e => {
+  e.classList.remove('activeCircle');
+});
+
+var div = document.getElementById(id);
+if (div)
+  div.classList.add('activeCircle');
+}
+
+
+    const hideDropdown = () => {
+      document.getElementById('dropdown1').style.display = 'none';
+    }
+
+    const showDropdown = () => {
+      document.getElementById('dropdown1').style.display = 'block';
+    }
+
+    const hideDropdown2 = () => {
+      document.getElementById('dropdown2').style.display = 'none';
+    }
+
+    const showDropdown2 = () => {
+      document.getElementById('dropdown2').style.display = 'block';
+    }
+
+    const hideDropdown3 = () => {
+      document.getElementById('dropdown3').style.display = 'none';
+    }
+
+    const showDropdown3 = () => {
+      document.getElementById('dropdown3').style.display = 'block';
+    }
+    </script>
+</body>
+
+</html>
